@@ -212,14 +212,13 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   padding: 20px 80px;
-  color: white;
-  background: #009efd;
-  background: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%);
+  color: black;
   text-align: center;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
+  background-color: white;
   white-space: nowrap;
   border-radius: 4px;
   cursor: pointer;
@@ -239,6 +238,28 @@ input[type="button"] {
   input[type="button"]:hover,
   input[type="button"]:active,
   input[type="button"]:focus {
+    outline: 0;
+    transform: scale(1.01);
+    transform: translateY(3px); }
+
+.discount-button {
+  display: inline-block;
+  padding: 20px 80px;
+  color: white;
+  background: #009efd;
+  background: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%);
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  box-shadow: 0 20px 12px -15px rgba(0, 0, 0, 0.2); }
+  .discount-button:hover, .discount-button:active, .discount-button:focus {
     outline: 0;
     transform: scale(1.01);
     transform: translateY(3px); }
@@ -385,9 +406,38 @@ hr {
     background-color: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%); }
 
 #download {
-  background: #5825ec;
+  background: url("../img/downloadBackground.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
   padding: 100px 0;
   margin-top: -60px; }
+  #download h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 68px;
+    font-weight: 900;
+    margin: 0; }
+  #download p {
+    max-width: 450px;
+    width: 100%;
+    margin: 20px auto;
+    font-weight: 900; }
+  #download .button {
+    position: relative;
+    width: 200px;
+    margin: 0 15px;
+    text-align: center;
+    padding: 20px 20px; }
+  #download .apple:before, #download .google:before {
+    position: absolute;
+    display: block;
+    left: 15%;
+    top: 19px; }
+  #download .apple:before {
+    content: url("../img/appleicon.png"); }
+  #download .google:before {
+    content: url("../img/playicon.png"); }
 
 .flex-video {
   height: 0;
