@@ -211,19 +211,21 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
   display: inline-block;
-  padding: 20px 60px;
-  color: black;
+  padding: 20px 80px;
+  color: white;
+  background: #009efd;
+  background: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%);
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: white;
   border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
-  transition: all 0.2s ease; }
+  transition: all 0.2s ease;
+  box-shadow: 0 20px 12px -15px rgba(0, 0, 0, 0.2); }
   .button:hover, .button:active, .button:focus,
   button:hover,
   button:active,
@@ -245,8 +247,6 @@ a {
   color: #0074D9;
   text-decoration: none;
   outline: 0; }
-  a:hover, a:focus {
-    color: #F012BE; }
 
 ::selection {
   background: #FFF498; }
@@ -365,6 +365,29 @@ hr {
 
 .device {
   border-top: 3px solid #00adff; }
+
+#discount {
+  margin-top: 65px; }
+
+.discount-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .discount-layout img {
+    height: auto;
+    width: 30%; }
+
+.offer {
+  width: 40%;
+  margin: 0 auto; }
+  .offer .offer .button {
+    background-color: #009efd;
+    background-color: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%); }
+
+#download {
+  background: #5825ec;
+  padding: 100px 0;
+  margin-top: -60px; }
 
 .flex-video {
   height: 0;
