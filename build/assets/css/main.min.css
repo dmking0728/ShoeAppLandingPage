@@ -198,7 +198,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -350,11 +350,14 @@ hr {
 .main-nav {
   display: flex;
   margin-top: 20px; }
-  .main-nav li {
+
+.special {
+  margin-left: -40px; }
+  .special li {
     list-style: none; }
-  .main-nav li:first-child {
+  .special li:first-child {
     margin-right: auto; }
-  .main-nav a {
+  .special a {
     display: block;
     color: white;
     border-radius: 4px;
@@ -363,9 +366,9 @@ hr {
     font-weight: 900;
     text-transform: uppercase;
     transition: all 0.2s ease; }
-  .main-nav a:hover, .main-nav a:active {
+  .special a:hover, .special a:active {
     color: #00adff; }
-  .main-nav a.download {
+  .special a.download {
     background: white;
     color: #00adff;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
@@ -375,6 +378,9 @@ hr {
   text-align: center;
   position: relative;
   height: 600px; }
+  @media only screen and (max-width: 680px) {
+    #features {
+      height: auto; } }
   #features:after {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     bottom: 0;
@@ -395,6 +401,9 @@ hr {
   grid-template-columns: repeat(3, auto);
   grid-gap: 100px;
   box-shadow: none !important; }
+  @media only screen and (max-width: 680px) {
+    .cards {
+      grid-template-columns: repeat(1, auto); } }
 
 .feature-card {
   background: white;
@@ -417,13 +426,24 @@ hr {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 680px) {
+    .discount-layout {
+      display: block; } }
   .discount-layout img {
     height: auto;
     width: 30%; }
+    @media only screen and (max-width: 680px) {
+      .discount-layout img {
+        height: auto;
+        width: 100%; } }
 
 .offer {
   width: 40%;
   margin: 0 auto; }
+  @media only screen and (max-width: 680px) {
+    .offer {
+      width: 100%;
+      text-align: center; } }
   .offer .offer .button {
     background-color: #009efd;
     background-color: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%); }
@@ -431,16 +451,24 @@ hr {
 #download {
   background: url("../img/downloadBackground.jpg") no-repeat;
   background-size: cover;
+  background-position: center;
   color: white;
   text-align: center;
   padding: 100px 0;
   margin-top: -60px; }
+  @media only screen and (max-width: 680px) {
+    #download {
+      margin-top: 70px;
+      padding: 40px; } }
   #download h2 {
     color: white;
     text-transform: uppercase;
     font-size: 68px;
     font-weight: 900;
     margin: 0; }
+    @media only screen and (max-width: 680px) {
+      #download h2 {
+        font-size: 44px; } }
   #download p {
     max-width: 450px;
     width: 100%;
@@ -452,6 +480,9 @@ hr {
     margin: 0 15px;
     text-align: center;
     padding: 20px 20px; }
+    @media only screen and (max-width: 680px) {
+      #download .button {
+        margin: 10px 15px; } }
   #download .apple:before, #download .google:before {
     position: absolute;
     display: block;
@@ -494,14 +525,26 @@ hr {
   height: 800px;
   text-align: center;
   overflow: hidden; }
+  @media only screen and (max-width: 680px) {
+    #header {
+      height: 500px !important; } }
   #header article {
     width: 60%;
     margin: 0 auto; }
+    @media only screen and (max-width: 680px) {
+      #header article {
+        width: 100%; } }
   #header h1 {
     color: white;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 680px) {
+      #header h1 {
+        margin-top: 60px; } }
   #header p {
     color: white; }
+    @media only screen and (max-width: 680px) {
+      #header p {
+        margin-top: 20px; } }
   #header img {
     height: auto;
     width: 80%; }

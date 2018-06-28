@@ -5,14 +5,22 @@
   display: flex
   align-items: center
   justify-content: center
+  @media only screen and (max-width: 680px)
+    display: block
 
   img
     height: auto
     width: 30%
+    @media only screen and (max-width: 680px)
+      height: auto
+      width: 100%
 
 .offer
   width: 40%
   margin: 0 auto
+  @media only screen and (max-width: 680px)
+    width: 100%
+    text-align: center
 
   .offer .button
     background-color: rgb(0,158,253)
