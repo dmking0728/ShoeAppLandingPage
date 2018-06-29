@@ -1,1 +1,1 @@
-window.sr=ScrollReveal();
+function showNav(){console.log("hello");var e=document.getElementById("responsive-nav");"responsive-nav"===e.className?e.className+=" unfold":e.className="responsive-nav"}window.sr=ScrollReveal();
