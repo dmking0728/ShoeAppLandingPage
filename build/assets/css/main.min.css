@@ -443,7 +443,7 @@ li.nav-toggle {
   grid-template-columns: repeat(3, auto);
   grid-gap: 100px;
   box-shadow: none !important; }
-  @media only screen and (max-width: 680px) {
+  @media only screen and (max-width: 833px) {
     .cards {
       grid-template-columns: repeat(1, auto); } }
 
@@ -460,9 +460,18 @@ li.nav-toggle {
 
 .device {
   border-top: 3px solid #00adff; }
+  @media only screen and (max-width: 833px) {
+    .device {
+      margin-bottom: 440px; } }
 
 #discount {
-  margin-top: 65px; }
+  margin-top: 35px; }
+  @media only screen and (max-width: 833px) {
+    #discount {
+      margin-top: 640px; } }
+  @media only screen and (max-width: 680px) {
+    #discount {
+      margin-top: -390px; } }
 
 .discount-layout {
   display: flex;
@@ -473,19 +482,26 @@ li.nav-toggle {
       display: block; } }
   .discount-layout img {
     height: auto;
-    width: 30%; }
+    width: 40%; }
     @media only screen and (max-width: 680px) {
       .discount-layout img {
         height: auto;
-        width: 100%; } }
+        width: 80%;
+        padding-left: 45px; } }
 
 .offer {
   width: 40%;
-  margin: 0 auto; }
+  margin: 0;
+  padding-left: 40px; }
+  @media only screen and (max-width: 1000px) {
+    .offer {
+      margin-bottom: 80px; } }
   @media only screen and (max-width: 680px) {
     .offer {
       width: 100%;
-      text-align: center; } }
+      text-align: center;
+      margin-bottom: 0px;
+      padding-left: 0; } }
   .offer .offer .button {
     background-color: #009efd;
     background-color: linear-gradient(132deg, #009efd 0%, #15c9cb 52%, #2af598 100%); }
@@ -501,7 +517,7 @@ li.nav-toggle {
   @media only screen and (max-width: 680px) {
     #download {
       background: url("../img/downloadBackgroundSmall.jpg") no-repeat;
-      margin-top: 70px;
+      margin-top: 30px;
       padding: 40px; } }
   #download h2 {
     color: white;
@@ -539,6 +555,8 @@ li.nav-toggle {
 #footer {
   text-align: center;
   padding: 60px 0; }
+  #footer ul {
+    padding-left: 0; }
   #footer li {
     list-style: none; }
   #footer a {
@@ -588,9 +606,6 @@ li.nav-toggle {
     @media only screen and (max-width: 680px) {
       #header p {
         margin-top: 20px; } }
-  #header img {
-    height: auto;
-    width: 80%; }
 
 #brands ul {
   padding: 20px 0;

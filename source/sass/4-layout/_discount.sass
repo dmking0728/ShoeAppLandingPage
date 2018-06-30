@@ -1,26 +1,39 @@
 #discount
-  margin-top: 65px
+  margin-top: 35px
+  @media only screen and (max-width: 833px)
+    margin-top: 640px
+  @media only screen and (max-width: 680px)
+      margin-top: -390px
+
 
 .discount-layout
   display: flex
   align-items: center
   justify-content: center
+
   @media only screen and (max-width: 680px)
     display: block
 
   img
     height: auto
-    width: 30%
+    width: 40%
     @media only screen and (max-width: 680px)
       height: auto
-      width: 100%
+      width: 80%
+      padding-left: 45px
+
 
 .offer
   width: 40%
-  margin: 0 auto
+  margin: 0
+  padding-left: 40px
+  @media only screen and (max-width: 1000px)
+    margin-bottom: 80px
   @media only screen and (max-width: 680px)
     width: 100%
     text-align: center
+    margin-bottom: 0px
+    padding-left: 0
 
   .offer .button
     background-color: rgb(0,158,253)
